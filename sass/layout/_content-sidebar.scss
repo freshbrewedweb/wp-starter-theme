@@ -1,20 +1,11 @@
-.content-area {
-	float: left;
-	margin: 0 (-$size__site-sidebar) 0 0;
-	width: $size__site-main;
-}
-
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
+	@include grid-media( (media: $bp__sm ) ){
+		@include grid-column(9);
+	}
 }
 
-.site-content .widget-area {
-	float: right;
-	overflow: hidden;
-	width: $size__site-sidebar;
-}
-
-.site-footer {
-	clear: both;
-	width: $size__site-main;
+.site-sidebar {
+	@include grid-media( (media: $bp__sm ) ){
+		@include grid-column(3);
+	}
 }

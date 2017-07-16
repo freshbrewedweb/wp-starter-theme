@@ -1,38 +1,54 @@
-/*
+/**
  * COLORS
  */
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__dark               : #362A26;
+$color__light              : #E2E0D7;
+$color__accent             : #CB7947;
 
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__background-body    : $color__light;
+$color__background-screen  : #f1f1f1;
+$color__background-hr      : #ccc;
+$color__background-button  : #e6e6e6;
+$color__background-pre     : #eee;
+$color__background-ins     : #fff9c0;
 
-$color__border-button: #ccc #ccc #bbb;
+$color__text-screen        : $color__light;
+$color__text-input         : #666;
+$color__text-input-focus   : #111;
+$color__link               : $color__accent;
+$color__link-visited       : darken($color__accent, 5%);
+$color__link-hover         : darken($color__accent, 10%);
+$color__text-main          : $color__dark;
+
+$color__border-button      : #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
+$color__border-input       : #ccc;
+$color__border-abbr        : #666;
 
-/*
+/**
+ * Breakpoints
+ */
+$bp__sm: 30em;
+$bp__md: 50em;
+$bp__lg: 70em;
+
+
+/**
  * STRUCTURE
  */
- $size__site-main: 100%;
- $size__site-sidebar: 25%;
+$site__width: $bp__lg;
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
 
-/*
+/**
  * TYPOGRAPHY
  */
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__sans-serif: sans-serif !default;
+$font__serif: serif !default;
+$font__heading: $font__sans-serif !default;
+$font__body: $font__serif !default;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace !default;
+$font__pre: "Courier 10 Pitch", Courier, monospace !default;
+$font__line-height-body: 1.5 !default;
+$font__line-height-pre: 1.6 !default;

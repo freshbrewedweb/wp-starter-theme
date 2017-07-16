@@ -1,0 +1,20 @@
+.site-header {
+	background: $color__dark;
+	color: $color__light;
+}
+
+	.site-branding {
+		@include grid-column(12);
+
+		@include grid-media( (media: $bp__sm) ) {
+			@include grid-column(3);
+		}
+	}
+
+	.main-navigation {
+		@include grid-column(12);
+
+		@include grid-media( (media: $bp__sm) ) {
+			@include grid-column(9);
+		}
+	}

@@ -41,8 +41,8 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
